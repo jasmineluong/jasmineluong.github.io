@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Daniel Caesar | Songs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="songs.css" />
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <img src="images/danielCaesarLogo.PNG" alt="" class="positioned-image">
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links">
+                        Albums
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/songs.html" class="navbar__links">
+                        Songs
+                    </a>
+                </li>
+            </ul>
+    </div>
+    </nav>
+
+    <div class="filters">
+        <select id="filterDropdown" onchange="filterByAlbum()">
+            <option value="all">Filter by: </option>
+            <option value="Freudian">Freudian</option>
+            <option value="Case Study 01">Case Study 01</option>
+            <option value="NEVER ENOUGH">NEVER ENOUGH</option>
+        </select>
+    </div>
+    
+    <div id="card-container"></div>
+    <div class="card" style="display: none;">
+        <div class="card-content">
+            <h2></h2>
+            <img src="" alt="">
+            <p2><b>duration:</b></p2>
+            <p class="card-duration"></p>
+            <p2><b>streams:</b></p2>
+            <p class="card-stream"></p>
+            <p2><b>album:</b></p2>
+            <p class = "card-album"></p>
+            
+        </div>
+    </div>
+</body>
+</html>
+
